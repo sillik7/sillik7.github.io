@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>Games Showcase: Game Maker 3 Games</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			a = [
+				{d: new Date("Jun 1, 2001"),	img: "missing.gif",				n: "Happy Boats",								a: "Anti-Pasti",							l: true, 	descr: "Shoot all the boats (one or two-player)."},
+				{d: new Date("Jun 1, 2001"),	img: "battleblox.png",			n: "Battle Blox",								a: "Spriteworks Developments",				l: false, 	descr: "Wonderful breakout type of game. Althoug in some sense a demo, it is very playable. Comes as an install program."},
+				{d: new Date("Jun 1, 2001"),	img: "jim_jordan.jpg",			n: "Jim Jordan Alien Exterminator",				a: "Justin Hill",							l: true, 	descr: "Shooting range type of game in which you have to shoot aliens that come running towards you. Import version."},
+				{d: new Date("Jun 1, 2001"),	img: "operation_pulsar.jpg",	n: "Operation Pulsar",							a: "Travis \"Deathcharge\" T.",				l: false, 	descr: "A wonderful space shooter with a great 3D look. Very professional. (Very big though.)"},
+				{d: new Date("Jun 1, 2001"),	img: "suv.jpg",					n: "The Wal-Mart SUV Parking Lot Challenge",	a: "Mr. Chubigans",							l: false, 	descr: "A one or two player game in which you must find a parking spot. Fun to play."},
+				{d: new Date("Jun 1, 2001"),	img: "basezone.jpg",			n: "Base Zone",									a: "Black Eagle",							l: false, 	descr: "A one or two player game in which you have to destroy the other players base. Very high quality."},
+				{d: new Date("May 22, 2001"),	img: "tank_battle.gif",			n: "Tank Battle",								a: "Thomas de Goede",						l: false, 	descr: "A two player game in which you have to destroy the other players tank. You can shoot, lay bombs, create walls, blow up toxic waste, etc. Nicely done."},
+				{d: new Date("May 22, 2001"),	img: "slither.gif",				n: "Slither",									a: "Eye Candy Games",						l: true, 	descr: "A maze game. You are the snake that must save the baby snakes from the crocs. Comes as installation program."},
+				{d: new Date("May 16, 2001"),	img: "ezcheckers.gif",			n: "EZ Checkers",								a: "Enigma Creative Software",				l: true, 	descr: "A checkers game. Please realize the the computer does not play the game. The program is meant for two players to play against each other."},
+				{d: new Date("May 1, 2001"),	img: "td.gif",					n: "Turbo Dario Crossing Away",					a: "Laimonas Dzikaras",						l: false, 	descr: "Platform game with a number of interesting levels."},
+				{d: new Date("Apr 20, 2001"),	img: "astro.gif",				n: "Astro Hybrid",								a: "Dung Truong",							l: true, 	descr: "A very nice fast-pacing horizontal shooter. Comes as a install program (also download the patch)."},
+				{d: new Date("Apr 17, 2001"),	img: "ribbitt.gif",				n: "Ribbitt",									a: "Outpost81",								l: true, 	descr: "Version of the well-known frogger game in which you have to bring a frog past a road and over logs to its home. 8 levels. Comes as a import file for game maker (version 3.3)."},
+				{d: new Date("Apr 6, 2001"),	img: "coolwarren.gif",			n: "Cool Warren",								a: "KrioGenik",								l: true, 	descr: "Platform game in which you are a skateboarder than must avoid obstacles. Comes as a (zipped) setup program."},
+				{d: new Date("Mar 21, 2001"),	img: "demolition.gif",			n: "Demolition Kids",							a: "RED (Sander Steenhuis)",				l: false, 	descr: "Great two player game in which the goal is to blow up the other player. Professional quality. Even contains intro video. Comes as a setup program."},
+				{d: new Date("Mar 21, 2001"),	img: "xentrix.gif",				n: "Xentrix",									a: "Tim Piper",								l: false, 	descr: "Tim did it again. A wonderful vertical shooter of professional quality. 10 increasingly difficult levels. Comes as a (zipped) setup program."},
+				{d: new Date("Mar 12, 2001"),	img: "bugz.jpg",				n: "Bugz",										a: "Primal",								l: true, 	descr: "Variant of space invaders, but this times with spiders and other bugs that want to conquer the world. Many levels that get more difficult all the time. Very nice graphics and well designed game play."},
+				{d: new Date("Mar 1, 2001"),	img: "f16.png",					n: "Rise of the F16",							a: "Black Eagle (Elisha Adrinata Kusuma)",	l: false, 	descr: "Vertically scrolling shooting game with many different planes to shoot, different bullets, powerups, a shop, etc. Very well done. Requires a rather powerful computer. Comes as an installation program."},
+				{d: new Date("Feb 15, 2001"),	img: "missing.gif",				n: "Boxing Game",								a: "Dirk v/d Bekerom",						l: true, 	descr: "Two player boxing game. Example of how such games can be made."},
+				{d: new Date("Feb 12, 2001"),	img: "quest.gif",				n: "Quest",										a: "Peter Mac",								l: true, 	descr: "Sort of pacman like game combined with some RPG aspects. Many rooms. Comes as stand-alone version."},
+				{d: new Date("Feb 12, 2001"),	img: "bsnowboarding.jpg",		n: "Bender Snowboarding",						a: "Travis \"Deathcharge\" T.",				l: false, 	descr: "3-D snowboarding game in which you must avoid the trees. Interesting example of how to make 3D looking games."},
+				{d: new Date("Feb 11, 2001"),	img: "f24.jpg",					n: "F24 Steelfighter",							a: "Michel Gort",							l: false, 	descr: "Horizontal shooter with many options and even a shop in which you can buy weapons and lives. New version. Very nice. Comes in the form of an install program that you should run to install the game on your computer."},
+				{d: new Date("Jan 1, 2001"),	img: "bloxtris.jpg",			n: "Bloxtris",									a: "Ronnie",								l: false, 	descr: "A game similar to the wellknown Tetris game but with some interesting twists. Witht he quality we expect from Ronnie. This game comes in the form of an install program that you should run to install the game on your computer."},
+				{d: new Date("Jan 1, 2001"),	img: "atomixblobs.jpg",			n: "ATOMIX BLOBS: Lost in LostMaze",			a: "Ronnie",								l: false, 	descr: "A completely professional looking puzzle game in which you have to guide a blob over fragile stones to reach the exit. A good example of what can be achieved with Game Maker. This game comes in the form of an install program that you should run to install the game on your computer."},
+				{d: new Date("Jan 1, 2001"),	img: "worms.png",				n: "Worms",										a: "Tim Piper",								l: false, 	descr: "The basic idea of the game is that you and a friend each control a team of four worms, that have a battle. If you can't find someone else to play with there is a single player mode, but it's pretty basic... Worms from each team take it in turns to fight, using bazookas, grenades and a variety of other weapons. The last team with living worms wins. Very professional. This game comes in the form of an install program that you should run to install the game on your computer."},
+				{d: new Date("Jan 1, 2001"),	img: "pacman.gif",				n: "Pacman",									a: "Tim Piper",								l: false, 	descr: "A wonderful version of Pacman. Very professional."},
+				{d: new Date("Jan 1, 2001"),	img: "missing.gif",				n: "Project SCAG",								a: "Woody",									l: true, 	descr: "Shoot the spaceships but avoid the bombs. Very nice graphics and well designed gameplay."},
+				{d: new Date("Jan 1, 2001"),	img: "shootinggallery.jpg",		n: "Futurama Shooting Gallery",					a: "Travis \"Deathcharge\" T.",				l: false, 	descr: "Shooting game that has very nice 3-D graphics."},
+				{d: new Date("Jan 1, 2001"),	img: "catcher2.png",			n: "Catcher",									a: "Jeroen Lukas",							l: false, 	descr: "Very nice game in which you have to catch good things (and not bad things)."},
+				{d: new Date("Jan 1, 2001"),	img: "platform.png",			n: "Platform Demo",								a: "Mark Overmars",							l: false, 	descr: "Many people have asked me how to do a platform game. Here is one. Very simple, just one level, not meant to be fun to play but mainly to learn. The help file includes information on how it was made."},
+				{d: new Date("Jan 1, 2001"),	img: "missing.gif",				n: "Sokoban",									a: "Mark Overmars",							l: true, 	descr: "In this well-known game you have to move boxes to a particular area. This version contains over 2000 puzzles."},
+			];
+			function init() {
+				var t;
+				for (var i = 0; i < a.length; i++)
+				{
+					var b = a[i];
+					if (i % 4 == 0)
+					{
+						t = $("<td><table class=\"c\" border=\"1\"></table></td>");
+						$("table#main>tbody>tr").append(t);
+					}
+					t.find("table").append("<tr><td>" + b.d.toLocaleDateString() + "<span class='" + (b.l ? "lost" : "available") + "'> (" + (b.l ? "Lost" : "Available") + ")</span>" + 
+						"<p class='name'>" + b.n +"</p><p class='author'>written by " + b.a + 
+						"</p><p class='image' title='" + b.descr + "'><img src='imagesGM3/" + b.img + "'/></p>" + "</td></tr>");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h2>Games Showcase: Game Maker 3 Games <a href ="https://archive.org/details/gm-3-games">Download the available games</a></h2>
+		<table id="main">
+			<tr></tr>
+		</table>
+		<script type="text/javascript">
+			init();
+		</script>
+	</body>
+</html>
