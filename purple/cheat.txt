@@ -1,0 +1,11 @@
+You can't get 100% in 5-1 - there are not enough bonuses in the level.
+You can't get the gem in 6-1 - there is no yellow screwdriver in the level.
+
+But you can cheat your way through:
+
+In 5-1, when you collect all existing bonuses,
+the first ones you collected will reappear at their old places (it's a bug)
+
+About the gem - open readme.htm in notepad.
+In the first line there are a bunch of 1s and 0s - in your case only one 0.
+Change it into an 1 and save the file - you now have all the gems.
