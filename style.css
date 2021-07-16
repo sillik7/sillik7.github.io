@@ -7,17 +7,23 @@ body
 
 td {
 	vertical-align: top;
+	line-height: 9px;
 }
 
 td:not(.big) {
 	width: 200px;
 }
 
-td, a {
+td, td a {
 	font-size: 11px;
 }
 
-p, h1, h2 {
+h3 a {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+p, h1, h2, h3 {
 	margin-top: 2px;
 	margin-bottom: 2px;
 }
@@ -26,13 +32,26 @@ p.lost, span.lost { color: red; }
 p.available, span.available { color: lime; }
 
 p.name {
+	color: FF8000;
+}
+
+p.name a {
 	font-weight: bold;
-	color: FFFF00;
+	color: 80FF00;
 	text-decoration: underline;
+}
+
+p.name a:hover {
+	color: fff;
 }
 
 p.author {
 	color: FFFF80;
+	font-style: italic;
+}
+
+span.editable {
+	color: FF8000;
 	font-style: italic;
 }
 
@@ -55,6 +74,10 @@ a:hover {
 a:active {
   color: FFFF00;
 } 
+
+a.selected {
+  color: FF8000;
+}
 
 i {
   color: FFFF80;
