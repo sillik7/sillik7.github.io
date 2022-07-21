@@ -1,0 +1,157 @@
+body
+{
+	background-color: #000166;
+	color: #FFFFFF;
+	font-family: Arial;
+}
+
+td {
+	vertical-align: top;
+	padding: 2px;
+	/*border: 4px ridge white;*/
+}
+
+td:not(.big) {
+	width: 200px;
+}
+
+td, td a {
+	font-size: 11px;
+}
+
+h3 a {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+h1, h2, h3 {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+p { 
+	text-align: center; 
+	width: 100%; 
+	margin: 0;
+	padding: 0;
+}
+span.name, span.name a { font-size: 13px; }
+
+table span 
+{
+	display: block;
+}
+
+span#found { color: lime; }
+span#lost  { color: red; }
+span#total  { color: cyan; }
+
+td.lost span.name { color: red; }
+td.available span.name { color: lime; }
+
+td.lost div
+{
+	background-color: #602020;
+}
+td.available div
+{
+	background-color: #303090;
+}
+
+td.available div:hover
+{
+	background-color: #4040B0;
+	cursor: pointer;
+}
+
+span.name {
+	color: FF8000;
+}
+
+span.name a {
+	font-weight: bold;
+	color: 80FF00;
+	text-decoration: underline;
+}
+
+span.name a:hover {
+	color: fff;
+}
+
+span.author {
+	color: FFFF80;
+	font-style: italic;
+}
+
+span.editable {
+	color: FF8000;
+	font-style: italic;
+}
+
+h3 a {
+	font-weight: bold;
+}
+
+h3 a:link, p.intro a:link {
+  color: FFFF00;
+}
+
+h3 a:visited, p.intro a:visited {
+  color: FFFF00;
+}
+
+h3 a:hover, p.intro a:hover {
+  color: FFFF00;
+}
+
+h3 a:active, p.intro a:active {
+  color: FFFF00;
+} 
+
+h3 a.selected, p.intro a.selected {
+  color: FF8000;
+}
+
+span.date
+{
+	font-weight: bold;
+	color: FFFF00;
+}
+
+p.intro a
+{
+  text-decoration: underline;
+}
+
+a {
+  color: white;
+  text-decoration: none; /* no underline */
+}
+
+i {
+  color: FFFF80;
+}
+
+table img {
+  max-width: 200px; 
+  height: 100%;
+  object-fit: contain;
+}
+
+p.intro
+{
+	text-align: left;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-left: 16px;
+}
+
+p.image
+{
+	height: 150px;
+}
+
+p.data
+{
+	height: 58px;
+}
