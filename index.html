@@ -185,7 +185,7 @@
 				{d: new Date("Oct 26, 2002"),	img: "images/crafts.jpg",				n: "Crafts",									a: "Mikko Kulmala",							l: false,	e: false,	descr: "Two player space shooting game. Very well done."},
 				{d: new Date("Nov 3, 2002"),	img: "images/doc.jpg",					n: "Dawn of Vengeance",							a: "Cole R. Medeiros",						l: true,	e: false,	descr: "Funny two-player game in which you both are roosters and need to find chickens."},
 				{d: new Date("Nov 3, 2002"),	img: "images/ggolf.jpg",				n: "Gangster Golf",								a: "Matty and Yako",						l: false,	e: false,	descr: "Minigolf game with many different tracks and surprises."},
-				{d: new Date("Jan 9, 2003"),	img: "images/blank.png",				n: "Star Dust",									a: "Janthya",								l: true,	e: false,	descr: "Simple but interesting game in which you must collect starts to destroy your enemies."},
+				{d: new Date("Jan 9, 2003"),	img: "images/stardust.png",				n: "Star Dust",									a: "Janthya",								l: true,	e: false,	descr: "Simple but interesting game in which you must collect starts to destroy your enemies."},
 				{d: new Date("Jan 9, 2003"),	img: "images/prisms2.jpg",				n: "Prisms of Light 2",							a: "Mr.Chubigans",							l: false,	e: false,	descr: "Interesting puzzle game in which you must deflect a light beam in the right direction. Over 100 puzzles."},
 				{d: new Date("Jan 9, 2003"),	img: "images/chain.jpg",				n: "Chain Reaction",							a: "Richard Gonzalez",						l: false,	e: false,	descr: "A very original puzzle game in which you must destroy all balls through a chain reaction."},
 				{d: new Date("Jan 9, 2003"),	img: "images/infiltrator.jpg",			n: "The Infiltrator Deathmatch",				a: "GZ Soft",								l: false,	e: false,	descr: "An overhead deathmatch game with many options. Nice graphical quality; professional."},
@@ -205,7 +205,7 @@
 				{d: new Date("Feb 15, 2003"),	img: "images/gradius.jpg",				n: "Gradius",									a: "Jedi Questmaster",						l: false,	e: true,	descr: "Editable scrolling shooter with many powerups. Rather difficult."},
 				{d: new Date("Feb 15, 2003"),	img: "images/matchcatch.jpg",			n: "Matcher Catcher",							a: "Morphosis",								l: false,	e: false,	descr: "A fast paces action game in which you must click the right colors. A bit simple game play maybe but it looks very nice."},
 				{d: new Date("Feb 15, 2003"),	img: "images/pac.jpg",					n: "Pacman",									a: "Twanka",								l: false,	e: false,	descr: "A rather nice version of the wellknown pacman game.", altn: "Pacman (2)"},
-				{d: new Date("Feb 28, 2003"),	img: "images/blank.png",				n: "GumBalls",									a: "KidBomb",								l: true,	e: false,	descr: "Puzzle game related to Tetris."},
+				{d: new Date("Feb 28, 2003"),	img: "images/gumballs.png",				n: "GumBalls",									a: "KidBomb",								l: false,	e: false,	descr: "Puzzle game related to Tetris."},
 				{d: new Date("Feb 28, 2003"),	img: "images/radpong.jpg",				n: "Radial Pong",								a: "MuZzLe227",								l: false,	e: false,	descr: "Radial version of the well-known pong game. You play against the computer."},
 				{d: new Date("Mar 2, 2003"),	img: "images/ness.jpg",					n: "Ness&apos; Christmas Journey",				a: "Darklink570",							l: false,	e: false,	descr: "Wonderfully done maze like game. Great graphics, puzzles to solve, and well finished. OK, it is sort of a winter game but who cares."},
 				{d: new Date("Mar 26, 2003"),	img: "images/ore.jpg",					n: "Ore No Ryomi",								a: "Mr.Chubigans",							l: false,	e: false,	descr: "Restaurant management game in which you must keep your customers satisfied to earn enough money."},
@@ -278,7 +278,7 @@
 			gm4p5 = [
 				{d: new Date("Jun 1, 2005"),	img: "images/demo61.jpg",				n: "Some demos for version 6.1",				a: "Mark Overmars",							l: false,	e: true,	descr: "This folder contains some demos for version 6.1: the registration features demo, the particle demo, and the effect demo. (These demos only work under version 6.1 of Game Maker.)", altn: "Registered Features Demo"},
 			];
-			baseUrl = "https://archive.org/download/old-gmgames/OldGMGames.zip/";
+			baseUrl = "https://archive.org/download/old-gmgames/";
 			function initTable(a, target) {
 				var t = $("table#" + target + ">tbody>tr");
 				for (var i = 0; i < a.length; i++)
@@ -332,11 +332,27 @@
 			All the games that come as an installer have been extracted, with the installer still included in the package.<br/>
 			Games made in Game Maker 6 and 6.1 have been patched to run on modern computers. Still, I can only confirm that all the games run fine on Windows 8, I haven't tested them on other machines.<br/>
 			Games marked as "Editable" still contain an executable, but also provide the source file (gmf, gmd or gm6).<br/>
-			If you can provide any of the missing games, or want a game removed, please contact me at <img src="mail.png" />.
+			If you can provide any of the missing games (the ones with red background), or want a game removed, please contact me at <img src="mail.png" />.<br/>
+			Special thanks to:
 		</p>
+			<ul>
+				<li><a href="http://www.archive.org">Internet Archive</a> - The Wayback Machine and the software archive helped me find a lot of the games. Some of them were found on archived shareware CDs.</li>
+				<li><a href="http://www.gamemakergames.com/">Game Maker Games</a> - A big archive of Game Maker games, sadly down at the moment.</li>
+				<li><a href="https://www.demonews.com/">Demo News</a>, <a href="https://www.caiman.us">Caiman.us</a>, <a href="https://www.freegame.cz">FreeGame.cz</a>, <a href="https://www.idnes.cz/hry/plne-hry/">IDnes.cz - Plne Hry</a> - Sites with big collections of freeware games, including a lot of rare Game Maker games.</li>
+				<li><a href="http://www.pix3lworkshop.altervista.org/history/gmaker/">Pix3l Workshop's Game Maker page</a> - A snapshot of how the official Game Maker site looked around 2002. Most of the links are dead, but some still work.</li>
+			</ul>
+		<p class="intro">
+			Other GM-related archives:
+		</p>
+			<ul>
+				<li><a href="https://www.yygarchive.org/">YoYoGames Archive</a> - A great archive of the games on the old YoYoGames Sandbox (2007-2016).</li>
+				<li><a href="https://bluemaxima.org/instance_archive/">instance_archive</a> - Another collection of Game Maker games from various sources.</li>
+				<li><a href="https://archive.org/details/gmaker">Game Maker 4.0 examples and Tutorials</a> - Unique collection, containing a lot of old examples and resources from the Game Maker 4 era.</li>
+			</ul>
 		<h3><a href="https://archive.org/details/old-gmgames">Download all available games</a></h3>
 		<h3>Lost: <span id="lost"></span> Found: <span id="found"></span> Total: <span id="total"></span></h3>
 		<p class="intro">
+			<span class="date">2022-08-03</span> - Found the game GumBalls and added a screen for the missing game Star Dust.<br/>
 			<span class="date">2022-07-21</span> - Complete redo of the site, added all available GM4+ games and a few newly found GM3 games.<br/>
 			<span class="date">2021-04-28</span> - First version of the archive, containing only Game Maker 3 games.
 		</p>

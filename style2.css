@@ -92,23 +92,23 @@ h3 a {
 	font-weight: bold;
 }
 
-h3 a:link, p.intro a:link {
+h3 a:link, p.intro a:link, li a:link {
   color: FFFF00;
 }
 
-h3 a:visited, p.intro a:visited {
+h3 a:visited, p.intro a:visited, li a:visited {
   color: FFFF00;
 }
 
-h3 a:hover, p.intro a:hover {
+h3 a:hover, p.intro a:hover, li a:hover {
   color: FFFF00;
 }
 
-h3 a:active, p.intro a:active {
+h3 a:active, p.intro a:active, li a:active {
   color: FFFF00;
 } 
 
-h3 a.selected, p.intro a.selected {
+h3 a.selected, p.intro a.selected, li a.selected {
   color: FF8000;
 }
 
@@ -118,7 +118,7 @@ span.date
 	color: FFFF00;
 }
 
-p.intro a
+p.intro a, li a
 {
   text-decoration: underline;
 }
