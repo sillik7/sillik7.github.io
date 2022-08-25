@@ -203,7 +203,7 @@
 				{d: new Date("Jan 29, 2003"),	img: "images/hunters.jpg",				n: "Hunters",									a: "Jan De Bruyn",							l: false,	e: false,	descr: "Great action game in which you must pick up balls while being followed by monsters. There are 100 difficult levels."},
 				{d: new Date("Jan 30, 2003"),	img: "images/matrixdude.jpg",			n: "Matrix Dude",								a: "ElDeno",								l: false,	e: false,	descr: "Hard-core shooting game with difficult enemies. Not for children."},
 				{d: new Date("Feb 15, 2003"),	img: "images/gradius.jpg",				n: "Gradius",									a: "Jedi Questmaster",						l: false,	e: true,	descr: "Editable scrolling shooter with many powerups. Rather difficult."},
-				{d: new Date("Feb 15, 2003"),	img: "images/matchcatch.jpg",			n: "Matcher Catcher",							a: "Morphosis",								l: false,	e: false,	descr: "A fast paces action game in which you must click the right colors. A bit simple game play maybe but it looks very nice."},
+				{d: new Date("Feb 15, 2003"),	img: "images/matchcatch.jpg",			n: "Matcher Catcher",							a: "Morphosis",								l: false,	e: false,	descr: "A fast paces action game in which you must click the right colors. A bit simple game play maybe but it looks very nice.", altlink: "https://www.mediafire.com/file/0c5zednv3pofd85/Matcher_Catcher.zip/file"},
 				{d: new Date("Feb 15, 2003"),	img: "images/pac.jpg",					n: "Pacman",									a: "Twanka",								l: false,	e: false,	descr: "A rather nice version of the wellknown pacman game.", altn: "Pacman (2)"},
 				{d: new Date("Feb 28, 2003"),	img: "images/gumballs.jpg",				n: "GumBalls",									a: "KidBomb",								l: false,	e: false,	descr: "Puzzle game related to Tetris."},
 				{d: new Date("Feb 28, 2003"),	img: "images/radpong.jpg",				n: "Radial Pong",								a: "MuZzLe227",								l: false,	e: false,	descr: "Radial version of the well-known pong game. You play against the computer."},
@@ -278,7 +278,7 @@
 			gm4p5 = [
 				{d: new Date("Jun 1, 2005"),	img: "images/demo61.jpg",				n: "Some demos for version 6.1",				a: "Mark Overmars",							l: false,	e: true,	descr: "This folder contains some demos for version 6.1: the registration features demo, the particle demo, and the effect demo. (These demos only work under version 6.1 of Game Maker.)", altn: "Registered Features Demo"},
 			];
-			baseUrl = "https://archive.org/download/old-gmgames_202208/";
+			baseUrl = "https://archive.org/download/old-gmgames1/";
 			function initTable(a, target) {
 				var t = $("table#" + target + ">tbody>tr");
 				for (var i = 0; i < a.length; i++)
@@ -290,7 +290,12 @@
 						$("table#" + target + ">tbody").append(t);
 					}
 					var nnn = "", nnn2 = "";
-					if (!b.l) { nnn = "<a href='" + baseUrl + (b.altn != undefined ? b.altn : b.n) + ".zip" + "'>"; nnn2 = "</a>"; }
+					if (!b.l) 
+					{ 
+						var lnk = baseUrl + (b.altn != undefined ? b.altn : b.n) + ".zip";
+						if (b.altlink != undefined) lnk = b.altlink;
+						nnn = "<a href='" + lnk + "'>"; nnn2 = "</a>"; 
+					}
 					t.append("<td class='" + (b.l ? "lost" : "available") + "'>" + nnn + "<div><p class='data'><span>" + b.d.toLocaleDateString('en-GB') + "</span>" + (b.e == true ? " <span class='editable'>Editable</span>" : "") +
 						"<span class='name'>" + b.n +"</span><span class='author'>by " + b.a + 
 						"</span></p><p class='image' title='" + b.descr + "'><img src='" + b.img + "'/></p>" + "</div>" + nnn2 + "</td>");
@@ -349,10 +354,10 @@
 				<li><a href="https://bluemaxima.org/instance_archive/">instance_archive</a> - Another collection of Game Maker games from various sources.</li>
 				<li><a href="https://archive.org/details/gmaker">Game Maker 4.0 examples and Tutorials</a> - Unique collection, containing a lot of old examples and resources from the Game Maker 4 era.</li>
 			</ul>
-		<h3><a href="https://archive.org/details/old-gmgames_202208">Download all available games</a> <a href="https://www.mediafire.com/folder/qwex7vibc3ian/OldGMGames">Mirror (Mediafire)</a></h3>
+		<h3><a href="https://archive.org/details/old-gmgames1">Download all available games</a> <a href="https://www.mediafire.com/folder/qwex7vibc3ian/OldGMGames">Mirror (Mediafire)</a></h3>
 		<h3>Lost: <span id="lost"></span> Found: <span id="found"></span> Total: <span id="total"></span></h3>
 		<p class="intro">
-			<span class="date">2022-08-25</span> - Found the game Hunters. For some reason Archive.org deleted my files... No explanation or anything. I reuploaded them and added a Mediafire mirror. If this happens again, I'll find another primary host.<br/>
+			<span class="date">2022-08-25</span> - Found the game Hunters. Archive.org deleted my files because the exe in "Matcher Catcher.zip" was detected as a virus. I think it's a false positive, but download at your own risk. I added a Mediafire mirror for all files.<br/>
 			<span class="date">2022-08-20</span> - Found the game Winter Olympics, added some missing screenshots.<br/>
 			<span class="date">2022-08-18</span> - Found the game EZ Checkers.<br/>
 			<span class="date">2022-08-03</span> - Found the game GumBalls and added a screen for the missing game Star Dust.<br/>
