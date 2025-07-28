@@ -31,7 +31,7 @@
 					if (href != undefined) {
 						var modifiedHref = href.substring(0, href.length - 35);
 						var exeFileName = unescape(modifiedHref.substring(modifiedHref.lastIndexOf("/") + 1));
-						$(this).append("<td><a href='" + modifiedHref + "'>" + exeFileName + "</a></td>");
+						$(this).append('<td><a href="' + modifiedHref + '">' + exeFileName + '</a></td>');
 						console.log(exeFileName);
 					}
 				});
